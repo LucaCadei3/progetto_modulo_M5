@@ -29,12 +29,22 @@ session_start();
                     <table style="margin-left: 20px; margin-rigth: 20px;">
                         <tr>
                             <td>
-                                <a href="#">
+                                <a href="../../../account\set\index.php">
                                     <img src="../../../images/modificautente.png">
                                 </a>
                             </td>
                             <td>
                                 <p>Modifica profilo</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">
+                                    <img src="../../../images/prenotazione.png" style='width: 60px; heigth: 60px'>
+                                </a>
+                            </td>
+                            <td>
+                                <p>Prenota un ristorante</p>
                             </td>
                         </tr>
                         <tr>
@@ -50,12 +60,12 @@ session_start();
                         <tr>
                             <td>
                                 <a href="#">
-                                    <img src="../../../images/elencoPrenotazioni.png" style='width: 60px; heigth: 60px'>
-                                </a>
-                            </td>
+                                    <img src="../../../images/recensione.png">
+                                </a></td>
                             <td>
-                                <p>Prenota un ristorante</p>
+                                <p>Inserisci una recensione</p>
                             </td>
+                            
                         </tr>
                         <tr>
                             <td>
@@ -65,12 +75,6 @@ session_start();
                             </td>
                             <td>
                                 <p>Visualizza le tue recensioni</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><img src="../../../images/recensioni.png"></td>
-                            <td>
-                                <p>Inserisci una recensione</p>
                             </td>
                         </tr>
                     </table>
