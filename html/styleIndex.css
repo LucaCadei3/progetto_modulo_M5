@@ -1,0 +1,515 @@
+:root{
+    --main-color:lightgreen;
+    --black:#222;
+    --white:#ffffff;
+}
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    cursor:url(images/cursor.cur),auto;
+}
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightyellow;
+}
+
+.header {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Aggiunge una leggera ombra per evidenziare */
+}
+
+
+.logo {
+    font-size: 24px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    cursor: pointer;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 20px;
+    padding: 10px 20px; /* Altezza e larghezza del link */
+    border-radius: 5px; /* Bordi arrotondati */
+    transition: background-color 0.3s; /* Transizione sul cambio di colore */
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Cambia il colore al passaggio del mouse */
+}
+
+.search-section {
+    text-align: center;
+    padding: 50px;
+    border: 2px solid var(--main-color);
+    border-radius: 15px;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column; /* Modificato per allineare verticalmente */
+    align-items: center; /* Centrato verticalmente */
+    justify-content: center;
+}
+
+.search-bar {
+    margin-top: 20px; /* Aggiunto margine per separare il titolo dalla barra di ricerca */
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: 2px solid var(--main-color); /* Stessa tonalità del bordo */
+    border-radius: 25px; /* Aumentato il raggio per angoli più arrotondati */
+    width: 300px; /* Ridotto un po' la larghezza */
+    outline: none; /* Rimozione della cornice di evidenziazione */
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px; /* Aumentato il raggio per angoli più arrotondati */
+    background-color: var(--main-color); /* Stesso colore di sfondo */
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Animazione durante il passaggio */
+}
+
+.search-bar button:hover {
+    background-color: #4CAF50; /* Cambia colore al passaggio del mouse */
+}
+
+.ristoranti_acclamati img {
+    width: 100px; /* Rimpicciolito le immagini */
+    height: auto; /* Mantieni l'aspetto proporzionato */
+    margin-left: 10px; /* Aggiunto margine sinistro tra le immagini */
+    margin-right: 10px; /* Aggiunto margine destro tra le immagini */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Aumentato il margine inferiore */
+    width: 70%; /* Allargato il bar */
+    justify-content: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 15px; /* Aumentato il padding per ingrandire l'input */
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 20px; /* Aumentato il font size */
+    outline: none;
+}
+
+.search-button {
+    padding: 15px 30px; /* Aumentato il padding per ingrandire il pulsante */
+    background-color:  var(--main-color);
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 20px; /* Aumentato il font size */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    justify-content: center;
+}
+
+.search-button:hover {
+    background-color:  var(--main-color);
+}
+
+.rating-section {
+    display: flex;
+    align-items: center;
+}
+
+.stars input[type="radio"] {
+    display: none;
+}
+
+.stars label {
+    font-size: 30px;
+    color: #ffc107;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.stars label:hover,
+.stars label:hover ~ label {
+    color: #ffdb70;
+}
+
+#map {
+    width: 600px; /* Imposta la larghezza desiderata */
+    height: 300px; /* Imposta l'altezza desiderata */
+    margin: 0 auto; /* Centra la mappa orizzontalmente */
+    margin-top: 20px; /* Aggiunge spazio sopra la mappa */
+}
+
+.navbar1 {
+    display: flex;
+}
+
+.navbar1 a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.home .swiper-slide{
+    text-align: center;
+    padding:2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover !important;
+    background-position: center !important;
+    min-height: 60rem;
+}
+
+.home .swiper-slide .content{
+    width: 85rem;
+    display: none;
+}
+
+.home .swiper-slide-active .content{
+    display: inline-block; 
+}
+
+.home .swiper-slide .content span{
+    display: block;
+    font-size: 2.2rem;
+    color: lightblue;
+    padding-bottom: 1rem;
+    animation:fadeIn .2s linear backwards .2s;
+}
+
+.home .swiper-slide .content h3{
+    font-size: 6vw;
+    color: lightyellow;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.3);
+    line-height: 1;
+    text-shadow: black;
+    padding: 1rem 0;
+    animation:fadeIn .2s linear backwards .4s;
+}
+
+.home .swiper-slide .content .btn{
+    animation:fadeIn .2s linear backwards .6s;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:  var(--main-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    justify-content: center;
+}
+
+/* Stili al passaggio del mouse */
+.btn:hover {
+    background-color: var(--main-color);    
+}
+
+.home .swiper-button-next,
+.home .swiper-button-prev{
+    top:inherit;
+    left: inherit;
+    bottom: 0;
+    right: 0;
+    height: 7rem;
+    width: 7rem;
+    background: white;
+    color: black;
+}
+
+.home .swiper-button-next:hover,
+.home .swiper-button-prev:hover{
+    background: var(--main-color);
+    color: white;
+}
+
+.home .swiper-button-next::after,
+.home .swiper-button-prev::after{
+    font-size: 2rem;
+}
+
+.home .swiper-button-prev{
+    right: 7rem;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+/* Stili per la sezione di ricerca */
+.search-section {
+    background-color: #f8f9fa;
+    padding: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex; /* Utilizzato display flex per centrare la div */
+    justify-content: center; /* Centrato orizzontalmente */
+}
+
+.ristoranti_acclamati img {
+    width: 100px; /* Rimpicciolito le immagini */
+    height: auto; /* Mantieni l'aspetto proporzionato */
+    margin-left: 10px; /* Aggiunto margine sinistro tra le immagini */
+    margin-right: 10px; /* Aggiunto margine destro tra le immagini */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Aumentato il margine inferiore */
+    width: 70%; /* Allargato il bar */
+}
+
+.search-bar input[type="text"] {
+    padding: 15px; /* Aumentato il padding per ingrandire l'input */
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 20px; /* Aumentato il font size */
+    outline: none;
+}
+
+.search-button {
+    padding: 15px 30px; /* Aumentato il padding per ingrandire il pulsante */
+    background-color:  var(--main-color);
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 20px; /* Aumentato il font size */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color:  var(--main-color);
+}
+
+.rating-section {
+text-align: center; /* Allinea il contenuto al centro */
+}
+
+.stars {
+display: inline-block;
+}
+
+input[type="radio"] {
+display: none;
+}
+
+label {
+cursor: pointer;
+}
+
+.fa-star {
+font-size: 24px; /* Imposta la dimensione delle stelle */
+color: #ddd; /* Colore delle stelle non selezionate */
+}
+
+input[type="radio"]:checked ~ label .fa-star {
+color: #f8d322; /* Colore della stella selezionata */
+}
+
+.menu-container {
+    max-width: 100%;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.restaurant-container {
+    white-space: nowrap; /* Evita il wrap dei ristoranti */
+    overflow-x: auto; /* Abilita lo scroll orizzontale */
+    -webkit-overflow-scrolling: touch; /* Abilita lo scrolling fluido su dispositivi iOS */
+}
+
+.restaurant {
+    display: inline-block; /* Allinea i ristoranti sulla stessa riga */
+    width: calc(33.33% - 20px); /* Calcola la larghezza dei ristoranti */
+    margin-right: 20px; /* Aggiungi spazio tra i ristoranti */
+    text-align: center;
+}
+
+.restaurant img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.restaurant h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.restaurant p {
+    font-size: 18px;
+    color: #666;
+}
+
+.restaurant-container{
+    background: white;
+}
+
+.restaurant-container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.restaurant-container .box-container .box{
+    border: black;
+    box-shadow: black;
+    background: white;
+}
+
+.restaurant-container .box-container .box .image{
+    height: 25rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.restaurant-container .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+    transition: transform 0.2s ease;
+}
+
+.restaurant-container .box-container .box .image:hover img {
+    transform: scale(1.1);
+}
+
+.restaurant-container .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+}
+
+.restaurant-container .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: black;
+}
+
+.restaurant-container .box-container .box .content p{
+    font-size: 1.5rem;
+    color: gray;
+    line-height: 2;
+    padding: 1rem 0;;
+}
+
+.swiper-slide {
+    display: flex;
+}
+
+.images {
+    flex: 0 0 50%; /* Utilizza il 50% dello spazio disponibile */
+}
+
+.images img {
+    max-width: 100%;
+    height: auto; /* Mantieni l'aspetto proporzionato */
+}
+
+.content {
+    flex: 0 0 50%; /* Utilizza il 50% dello spazio disponibile */
+    padding: 20px;
+    text-align: left; /* Allinea il testo a sinistra */
+}
+
+.small-image {
+    position: relative;
+    z-index: 1; /* Assicura che le immagini piccole siano sopra l'immagine grande */
+    margin-bottom: -50px; /* Sovrappone leggermente le immagini piccole all'immagine grande */
+}
+
+.text-content {
+    background-color: #fff; /* Aggiunge uno sfondo bianco per leggibilità */
+    padding: 10px;
+    z-index: 2; /* Assicura che il testo sia sopra le immagini piccole */
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.large-description {
+    font-size: 20px;
+    line-height: 1.6;
+}
+.divAreaRis {
+    width: 500px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 50px;
+}
+.divAreaRis img {
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+}
+
+.swiper-slide {
+    background-color: transparent; /* Imposta lo sfondo delle slide su trasparente */
+}
+
+.swiper-slide:not(.swiper-slide-active) {
+    visibility: hidden; /* Nasconde le slide non attive */
+}
+.divAreaRis tr {
+    height: 100px;
+}
+.divAreaRis td {
+    width: 100px;
+}
