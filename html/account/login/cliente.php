@@ -69,6 +69,9 @@ if(isset($_COOKIE["token"])){
                 setcookie("account", "c", time()+(3600*24*30),"/");
             }
 
+            // Salvare l'email in sessione
+            $_SESSION['email'] = $row['mail'];
+
             //se tutto va a buon fine
             header("Location: ../../dashboard/user/home/");
 
