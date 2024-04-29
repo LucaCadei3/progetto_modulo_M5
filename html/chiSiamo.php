@@ -31,10 +31,10 @@
     <div class="restaurant-container">
         <div class="box-container">
             <div class="box">
-                <div class="swiper mySwiper">
+                <div class="swiper mySwiper" style ='background-color:lightyellow'>
                     <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                    <center><img src="images/roma1.jpg" width="200" height="150" /></center>
+                    <center><img src="images/persona1.jpeg" width="200" height="150" /></center>
                         <div class="content">
                             <h3>Marco93</h3>
                             <div class="content">
@@ -44,7 +44,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                    <center><img src="images/roma1.jpg" width="200" height="150" /></center>
+                    <center><img src="images/persona2.jpeg" width="200" height="150" /></center>
                         <div class="content">
                             <h3>Gastronauta87</h3>
                             <div class="content">
@@ -54,7 +54,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                    <center><img src="images/roma1.jpg" width="200" height="150" /></center>
+                    <center><img src="images/persona3.jpeg" width="200" height="150" /></center>
                         <div class="content">
                             <h3>CucinareInsieme</h3>
                             <div class="content">
@@ -64,7 +64,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                    <center><img src="images/roma1.jpg" width="200" height="150" /></center>
+                    <center><img src="images/persona4.jpg" width="200" height="150" /></center>
                         <div class="content">
                             <h3>GourmetExplorer</h3>
                             <div class="content">
@@ -78,6 +78,42 @@
             </div>
         </div>
     </div>
+    <br>
+    <br>
+    <br>
+    
+    <center>
+    <section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>LINK PAGINE</h3>
+            <a href="index.php"><i class="fas fa-angle-right"></i> food</a>
+            <a href="chiSiamo.php"><i class="fas fa-angle-right"></i>Chi siamo</a>
+            <a href="map.php"><i class="fas fa-angle-right"></i>Map</a>
+            <a href="#.php"><i class="fas fa-angle-right"></i>Recensioni</a>
+        </div>
+
+        <div class="box">
+            <h3>CONTATTI</h3>
+            <a href="#"><i class="fas fa-phone"></i> +123-456-7890</a>
+            <a href="#"><i class="fas fa-phone"></i> +111-222-3456</a>
+            <a href="#"><i class="fas fa-envelope"></i> //@gmail.com</a>
+            <a href="#"><i class="fas fa-map"></i> BERGAMO </a>   
+        </div>
+
+        <div class="box">
+            <h3>SEGUITECI</h3>
+            <a href="#"><i class="fab fa-facebook"></i> facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+            <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+            <a href="#"><i class="fab fa-linkedin"></i> linkedin</a>        
+        </div>
+    </div>
+    <div class="credit"> created by <span>GRUPPO PROGETTO</span></div>
+</section>
+</center>
 
     
 
@@ -94,6 +130,10 @@
                 depth: 100,
                 modifier: 1,
                 slideShadows: true,
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false, // non interrompere l'autoplay quando l'utente interagisce con lo swiper
             },
             pagination: {
                 el: ".swiper-pagination",
