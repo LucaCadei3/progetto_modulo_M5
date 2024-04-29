@@ -32,7 +32,7 @@
         <nav class="navbar">
             <a href="chiSiamo.php">Chi siamo</a>
             <a href="map.php">Map</a>
-            <a href="#">Recensioni</a>
+            <a href="recensioni.php">Recensioni</a>
         </nav>
         <nav class="navbar">
             <a href="account/login/index.php">Login</a>
@@ -312,7 +312,7 @@
             <a href="index.php"><i class="fas fa-angle-right"></i> food</a>
             <a href="chiSiamo.php"><i class="fas fa-angle-right"></i>Chi siamo</a>
             <a href="map.php"><i class="fas fa-angle-right"></i>Map</a>
-            <a href="#.php"><i class="fas fa-angle-right"></i>Recensioni</a>
+            <a href="recensioni.php"><i class="fas fa-angle-right"></i>Recensioni</a>
         </div>
 
         <div class="box">
