@@ -570,3 +570,24 @@ color: #f8d322; /* Colore della stella selezionata */
     height: 500px;
     width: 100%; /* Imposta una larghezza massima per l'elemento */
 }
+
+/* Link non visitato */
+a:link {
+    color: black; /* Imposta il colore del link non visitato a nero */
+}
+
+/* Link visitato */
+a:visited {
+    color: black; /* Imposta il colore del link visitato a nero */
+}
+
+/* Link quando il mouse vi passa sopra */
+a:hover {
+    color: black; /* Imposta il colore del link quando il mouse ci passa sopra a nero */
+}
+
+/* Link attivo */
+a:active {
+    color: black; /* Imposta il colore del link attivo a nero */
+}
+
