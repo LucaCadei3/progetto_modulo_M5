@@ -291,18 +291,48 @@
 <br>
 <div class="search-section" style="width: 100%; height: 500px; salign-items: center;">
     <div class="content" style="text-align: center;">
-    <img src="images/roma.jpg" style="width: 200px; height: 200px;">
+    <img src="images/giftCard.png" style="width: 200px; height: 200px;">
         <h1 style="font-size: 50px;">GIFT CARD</h1>
         <div class="content" style="text-align: center;">
             <p style="font-size: 30px;">COMPRA LA NOSTRA GIFT CARD</p>
-            <p style="font-size: 30px;">utilizzala in più di 15.000 ristoranti</p>
             <br>
-            <a href="#" class="btn" style="font-size: 18px;">Comprala ora!</a>
+            <p style="font-size: 20px;">utilizzala in più di 15.000 ristoranti</p>
+            <br>
+            <a href="#" class="btn" style="font-size: 20px;">Comprala ora!</a>
         </div>
     </div>
 </div>
 
+<section class="footer">
 
+    <div class="box-container">
+
+        <div class="box">
+            <h3>LINK PAGINE</h3>
+            <a href="index.php"><i class="fas fa-angle-right"></i> food</a>
+            <a href="chiSiamo.php"><i class="fas fa-angle-right"></i>Chi siamo</a>
+            <a href="map.php"><i class="fas fa-angle-right"></i>Map</a>
+            <a href="#.php"><i class="fas fa-angle-right"></i>Recensioni</a>
+        </div>
+
+        <div class="box">
+            <h3>CONTATTI</h3>
+            <a href="#"><i class="fas fa-phone"></i> +123-456-7890</a>
+            <a href="#"><i class="fas fa-phone"></i> +111-222-3456</a>
+            <a href="#"><i class="fas fa-envelope"></i> //@gmail.com</a>
+            <a href="#"><i class="fas fa-map"></i> BERGAMO </a>   
+        </div>
+
+        <div class="box">
+            <h3>SEGUITECI</h3>
+            <a href="#"><i class="fab fa-facebook"></i> facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+            <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+            <a href="#"><i class="fab fa-linkedin"></i> linkedin</a>        
+        </div>
+    </div>
+    <div class="credit"> created by <span>GRUPPO PROGETTO</span></div>
+</section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
