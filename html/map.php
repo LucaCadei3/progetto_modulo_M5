@@ -4,55 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Map</title>
+    <link rel="stylesheet" href="styleIndex.css" type="text/css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 800px;
-        }
-
-        #map {
-            height: 100%;
-        }
-
-    .header {
-        background-color: #343a40;
-        color: #ffffff;
-        padding: 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-
-    .logo {
-        font-size: 24px;
-        text-decoration: none;
-        color: #ffffff;
-    }
-
-    .navbar {
-        display: flex;
-    }
-
-    .navbar a {
-        color: #ffffff;
-        text-decoration: none;
-        font-size: 25px;
-        margin-left: 20px;
-        padding: 10px 20px; 
-        border-radius: 5px;
-        transition: background-color 0.3s;
-    }
-
-    .navbar a:hover {
-        background-color: rgba(255, 255, 255, 0.1); /* Cambia il colore al passaggio del mouse */
-    }
-    </style>
 </head>
 <body>
     <section class="header">
@@ -68,6 +22,42 @@
         </nav>
     </section>
     <div id="map"></div>
+    <br>
+    <br>
+    <br>
+
+    <center>
+    <section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>LINK PAGINE</h3>
+            <a href="index.php"><i class="fas fa-angle-right"></i> food</a>
+            <a href="chiSiamo.php"><i class="fas fa-angle-right"></i>Chi siamo</a>
+            <a href="map.php"><i class="fas fa-angle-right"></i>Map</a>
+            <a href="#.php"><i class="fas fa-angle-right"></i>Recensioni</a>
+        </div>
+
+        <div class="box">
+            <h3>CONTATTI</h3>
+            <a href="#"><i class="fas fa-phone"></i> +123-456-7890</a>
+            <a href="#"><i class="fas fa-phone"></i> +111-222-3456</a>
+            <a href="#"><i class="fas fa-envelope"></i> //@gmail.com</a>
+            <a href="#"><i class="fas fa-map"></i> BERGAMO </a>   
+        </div>
+
+        <div class="box">
+            <h3>SEGUITECI</h3>
+            <a href="#"><i class="fab fa-facebook"></i> facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+            <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+            <a href="#"><i class="fab fa-linkedin"></i> linkedin</a>        
+        </div>
+    </div>
+    <div class="credit"> created by <span>GRUPPO PROGETTO</span></div>
+    </section>
+    </center>
 
     <script>
         var map = L.map('map').setView([45.6983, 9.6773], 13); // Coordinate di Bergamo
