@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+on<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -156,7 +156,7 @@
             <a href="index.php"><i class="fas fa-angle-right"></i> food</a>
             <a href="chiSiamo.php"><i class="fas fa-angle-right"></i>Chi siamo</a>
             <a href="map.php"><i class="fas fa-angle-right"></i>Map</a>
-            <a href="#.php"><i class="fas fa-angle-right"></i>Recensioni</a>
+            <a href="recensioni.php"><i class="fas fa-angle-right"></i>Recensioni</a>
         </div>
 
         <div class="box">
